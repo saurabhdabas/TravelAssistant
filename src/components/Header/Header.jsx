@@ -15,6 +15,7 @@ export default function Header({brand,username,email}) {
       <div className='header__bottom-section'>
           <img className='header__avatar' src="https://i.pravatar.cc/40?img=13" alt='user-avatar'/>
           <h4 className='header__login-detail'>{`logged in as : ${email}`}</h4>
+          <img className='header__logout-btn' src="../exit.png" alt='log-out' width='30px'/>
       </div>
     </div>
   )
