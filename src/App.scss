@@ -1,7 +1,8 @@
 @import "styles/header";
 @import "styles/main";
 @import "styles/location";
-.App {
+
+.home, .search {
   display:flex;
   height:100vh;
 }

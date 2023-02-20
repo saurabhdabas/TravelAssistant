@@ -1,16 +1,23 @@
 import './App.scss';
-import Header from './components/Header/Header';
-import Main from './components/Main/Main';
+import { Routes, Route } from 'react-router-dom';
+import Home from './Pages/Home';
+import Search from './Pages/Search';
 
 const App = () => {
   return (
     <div className="App">
-      <Header 
-        brand={"Travel Assistant"}
-        username={"Saurabh"}
-        email={"saurabhdabas7@gmail.com"} 
-      />
-      <Main/>
+      <Routes>
+        <Route path="/home" 
+          element={
+            <Home/>
+          }
+        />
+        <Route path="/search" 
+          element={
+            <Search/>
+          }
+        />
+      </Routes>
     </div>
   );
 }
